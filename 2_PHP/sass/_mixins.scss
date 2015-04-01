@@ -1,0 +1,21 @@
+
+// Create Clearfix Mixin
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Create Ease Mixin
+@mixin ease {
+  transition: 333ms all ease-in-out;
+}
